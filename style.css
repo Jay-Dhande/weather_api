@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(211, 31, 31) , rgb(38, 221, 218));
+}
+.container{
+    width: 55vw;
+    height: min-content;
+    background: linear-gradient(to right, rgba(5, 245, 37, 0.726) , rgb(28, 53, 219));
+    /* background-color: #fff; */
+    border-radius: 12px;
+    padding: 20px;
+    border: 3px solid black;
+
+}
+.search-box{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+}
+.input-box{  
+    width: 85%;
+    text-transform: capitalize;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+.btn{
+   
+    width: 12%;
+    height: 8vh;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+.btn:hover{
+     background-color: grey;
+     cursor: pointer;
+}
+
+.weather-body img{
+    width: 40%;
+}
+
+.weather-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px ;  
+}
+.weather-box{
+    margin: 20px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.weather-box .Temprature{
+    font-size:xx-large;
+    font-weight: bolder;
+    font-family:sans-serif;
+    position: relative;
+}
+
+.weather-box .Temprature sup{
+    font-size: small;
+    font-weight: bold;
+    position: absolute;
+}
+.weather-box .weather-text{
+    font-size: larger;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    font-size: large;
+   font-weight: bold;
+
+}
+
+.Humidity , .wind{
+    display:flex ;
+    align-items: center;
+}
+.weather-details i{
+    font-size: 35px;
+    margin: 4px;
+}
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-not-found h1{
+    font-size: 20px;
+    color: black;
+    margin-block-end: 15px;
+}
+.location-not-found img{
+    width: 80%;
+}
